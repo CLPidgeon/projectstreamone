@@ -1,0 +1,73 @@
+<style type="text/css">
+body {
+    background-color: #222222;
+    text-align: center;
+    font-family: roboto;
+    color: white;
+}
+
+
+.form-group {
+	align: center;
+}
+
+</style>
+
+
+<div>
+	<h1>{{title}}</h1>
+	<p>{{info}}</p>
+
+</div>
+
+    <div class="container" align="center">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+	
+	<form name="ContactForm" ng-submit="submitForm()" novalidate>
+	
+		<div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" ng-model="name.contactform" required="" placeholder="enter your name">
+            <p ng-show="ContactForm.name.$pristine" class="help-block">Your name is required</p>
+        </div>
+
+		<div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="email.contactform" required="" placeholder="enter your email">
+            <p ng-show="ContactForm.email.$pristine" class="help-block">Your email address is required</p>
+        </div>
+
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="number" name="contact" class="form-control" ng-model="contact.contactform" required="" placeholder="enter your contact number">
+            <p ng-show="ContactForm.contact.$pristine" class="help-block">Your contact number is required</p>
+        </div>
+		
+		<div class="form-group">
+            <label>Date of Event</label>
+            <input type="date" name="date" class="form-control" ng-model="date.contactform" required="" placeholder="enter date">
+            <p ng-show="ContactForm.date.$pristine" class="help-block">The event date is required</p>
+        </div>
+
+        <div class="form-group">
+            <label>Details</label>
+            <input type="text" name="details" class="form-control" ng-model="details.contactform" required="" placeholder="add details of event here">
+            <p ng-show="ContactForm.details.$pristine" class="help-block">Event details are required</p>
+        </div>
+
+		<button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+
+	</form>
+
+	       </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+

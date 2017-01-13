@@ -1,0 +1,58 @@
+<style type="text/css">
+body {
+    background-color: #222222;
+    text-align: center;
+    font-family: roboto;
+    color: white;
+}
+
+form {
+    align:center;
+}
+
+</style>
+
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+
+                <form name="registrationForm" ng-submit="submitForm()" novalidate>
+
+                    <div class="form-group" align="center">
+
+                        <label>Email Address:</label>
+
+                        <input type="email" name="email" class="form-control" ng-model="user.username" required>
+
+                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
+
+                    </div>
+
+                     <div class="form-group">
+
+                        <label>Password:</label>
+
+                        <input type="password" name="password" class="form-control" ng-model="user.password" required>
+
+                        <p ng-show="registrationForm.password.$pristine" class="help-block">Your password is required</p>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Register</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
