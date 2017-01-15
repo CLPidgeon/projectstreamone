@@ -40,7 +40,7 @@ angular.module('RouteControllers', [])
 
     }).controller('RegisterController', function($scope, UserAPIService) {
 
-       $scope.title = "Welcome to Swing/Jive Band members page!"
+       $scope.title = "Welcome to Swing/Jive band's members page!"
 
         $scope.registrationUser = {};
         var URL = "https://morning-castle-91468.herokuapp.com/";

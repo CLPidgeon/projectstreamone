@@ -7,9 +7,34 @@ body {
 }
 
 
-.form-group {
-	align: center;
+#form {
+    background-color: #222222;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
 }
+
+label {
+font-family: Roboto;
+font-size: 18px;
+color: white;
+height: 20px;
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+text-align: left;
+clear: both;
+}
+
+
+
+
 
 </style>
 
@@ -17,57 +42,42 @@ body {
 <div>
 	<h1>{{title}}</h1>
 	<p>{{info}}</p>
+	<hr />
 
 </div>
 
-    <div class="container" align="center">
+<div class="container" align="center">
 
-        <div class="row">
-
-            <div class="col-sm-6">
-	
-	<form name="ContactForm" ng-submit="submitForm()" novalidate>
-	
-		<div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" ng-model="name.contactform" required="" placeholder="enter your name">
+   	<div id="form">
+    <form name="ContactForm" ng-submit="submitForm()" novalidate>
+        <fieldset>
+            <label>Name:</label>
+            <input type="text" name="name" class="form-control" ng-model="name.contactForm" required="" placeholder="please enter your name">
             <p ng-show="ContactForm.name.$pristine" class="help-block">Your name is required</p>
-        </div>
-
-		<div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" class="form-control" ng-model="email.contactform" required="" placeholder="enter your email">
+            
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" ng-model="email.contactForm" required="" placeholder="please enter your email address">
             <p ng-show="ContactForm.email.$pristine" class="help-block">Your email address is required</p>
-        </div>
 
-        <div class="form-group">
-            <label>Contact Number</label>
-            <input type="number" name="contact" class="form-control" ng-model="contact.contactform" required="" placeholder="enter your contact number">
+            <label>Contact Number:</label>
+            <input type="tel" name="contact" class="form-control" ng-model="contact.contactForm" required="" placeholder="please enter your contact number">
             <p ng-show="ContactForm.contact.$pristine" class="help-block">Your contact number is required</p>
-        </div>
-		
-		<div class="form-group">
-            <label>Date of Event</label>
-            <input type="date" name="date" class="form-control" ng-model="date.contactform" required="" placeholder="enter date">
+
+            <label>Date:</label>
+            <input type="date" name="date" class="form-control" ng-model="date.contactForm" required="" >
             <p ng-show="ContactForm.date.$pristine" class="help-block">The event date is required</p>
-        </div>
 
-        <div class="form-group">
-            <label>Details</label>
-            <input type="text" name="details" class="form-control" ng-model="details.contactform" required="" placeholder="add details of event here">
+            <label>Event Details:</label>
+            <input type="text" name="details" class="form-control" ng-model="details.contactForm" required="" placeholder="please enter your further details of the event">
             <p ng-show="ContactForm.details.$pristine" class="help-block">Event details are required</p>
-        </div>
 
-		<button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+            <br />
+            <br />
 
-	</form>
-
-	       </div>
-
-        </div>
-
-    </div>
-
+            <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+        </fieldset>
+    </form>
+</div>
 </div>
 
 

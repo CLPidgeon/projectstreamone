@@ -6,53 +6,71 @@ body {
     color: white;
 }
 
-form {
-    align:center;
+
+#form {
+    background-color: #222222;
+    height: 600px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
 }
+
+label {
+font-family: Roboto;
+font-size: 18px;
+color: white;
+height: 20px;
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+text-align: left;
+clear: both;
+}
+
+
+
+
 
 </style>
 
 
 
-    <div class="container">
+<div>
+    <h3>{{title}}</h3>
+    
+    <hr />
 
-        <div class="row">
+</div>
 
-            <div class="col-sm-6">
 
-                <form name="registrationForm" ng-submit="submitForm()" novalidate>
 
-                    <div class="form-group" align="center">
+<div class="container" align="center">
 
-                        <label>Email Address:</label>
+    <div id="form">
+        <form name="registrationForm" ng-submit="submitForm()" novalidate>
+            <fieldset>
+                <label>Email Address:</label>
+                <input type="email" name="email" class="form-control" ng-model="user.username" required="" placeholder="please enter your email address">
+                <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
+                
+            
+                <label>Password:</label>
+                <input type="password" name="password" class="form-control" ng-model="user.password" required="">
+                <p ng-show="registrationForm.password.$pristine" class="help-block">A password is required</p>
 
-                        <input type="email" name="email" class="form-control" ng-model="user.username" required>
+                <br />
+                <br />
 
-                        <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
-
-                    </div>
-
-                     <div class="form-group">
-
-                        <label>Password:</label>
-
-                        <input type="password" name="password" class="form-control" ng-model="user.password" required>
-
-                        <p ng-show="registrationForm.password.$pristine" class="help-block">Your password is required</p>
-
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Register</button>
-
-                </form>
-
-            </div>
-
-        </div>
-
+                <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+            </fieldset>
+        </form>
     </div>
+</div>
 
-
-
-
+   
 
