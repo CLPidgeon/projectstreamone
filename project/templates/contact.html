@@ -1,0 +1,58 @@
+<style type="text/css">
+#form {
+    background-color: #339933;
+    height: 600px;
+    width: 600px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
+}
+
+
+
+</style>
+
+
+<div class="container">
+  <h1>Contact Us!</h1>
+  <h4>For more information fill out the form and we will be in touch!</h4>
+	<hr />
+
+</div>
+
+<div class="container" align="center">
+
+   	<div id="form">
+    <form name="ContactForm" ng-submit="submitForm()" novalidate>
+        <fieldset>
+            <label>Name:</label>
+            <input type="text" name="name" class="form-control" ng-model="name.contactForm" required="" placeholder="please enter your name">
+            <p ng-show="ContactForm.name.$pristine" class="help-block">Your name is required</p>
+            
+            <label>Email:</label>
+            <input type="email" name="email" class="form-control" ng-model="email.contactForm" required="" placeholder="please enter your email address">
+            <p ng-show="ContactForm.email.$pristine" class="help-block">Your email address is required</p>
+
+            <label>Contact Number:</label>
+            <input type="tel" name="contact" class="form-control" ng-model="contact.contactForm" required="" placeholder="please enter your contact number">
+            <p ng-show="ContactForm.contact.$pristine" class="help-block">Your contact number is required</p>
+
+            <label>Day interested in:</label>
+            <input type="text" name="details" class="form-control" ng-model="details.contactForm" required="" placeholder="please enter the day(s) you are interested in">
+            <p ng-show="ContactForm.details.$pristine" class="help-block">Friday and/or Tuesday is required</p>
+
+            <br />
+            <br />
+
+            <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+        </fieldset>
+    </form>
+</div>
+</div>
+
+

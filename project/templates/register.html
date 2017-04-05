@@ -1,0 +1,50 @@
+<style type="text/css">
+#form {
+    background-color: #339933;
+    height: 200px;
+    width: 600px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
+}
+
+</style>
+
+
+
+<div class="container">
+  <h1>Register for our weekly round up newsletter!</h1>
+    
+    <hr />
+    <p>Here's an example of our weekly roundup newsletter from our recent trip to Carrington:<p>
+    <p><i>"So, TF and an escapee TT were braced at 10am, not for birdwatching particularly, but for a really good row with security guards, whom we imagined to be blocking our right of way with loaded rifles, given the recent Carrington closures. However, our footpath was normally accessible, our progress unhampered, so that literally cleared the way for blue skies and birdsong galore! Yippee.... As we turned right by the barrier, sharp eyes immediately spotted our first buzzard behind a pylon, and what a day for floating on the thermals it was- unrelenting sunshine and skies so blue you could fill a fountain pen up with them..( if only we didn't all use biros...)Anyway, back to birds- Chiff chaff in the tree, looking very yellow, was our next treat, and a peep through the fence at the tufted duck on the water. A flock of finches made us all turn then, but the main prize was less fleeting- brambling in the leafless trees, male and female, positively burnished in the spring rays, great views of a glorious little gem. We watched awhile, then stalked them 'til  they flew, the skylark raining down song on our tiptoed advance. Marvellous. We wandered  on, noting chaffinch, blue and great tit, blackbird and robin, until another peer through the fence was necessary- this time at a little island where lapwing and two oyster catchers joined the mute swan, Canada's , mallard and black headed gulls. We were distracted then by buzzard mews, but  it was a kestrel, confusingly, that honed into view.... those bird ventriloquists, how they get their kicks! On then, alongside four cylindrical ?gas storage chambers, with mostly wood pigeon, magpie, carrion crow, jackdaw, and then long tailed tits for company.  We took a left then, and were greeted by mud, and an extremely unwelcoming Himor sign, which seemed to suggest we were trespassing, unless using public right of way, which of course we were, and you would have to be to read the ruddy sign! Grrrrr. Enough to make you run amok in the fields, if it wouldn't have scared the birds!! Anyway, we heard and glimpsed a close wren, and then watched a buzzard and a kestrel circling one another, great for size-comparison. Then it was ' Invasion of the yellowhammers' time....how many of these beauties must there be in this area? Males deliriously bright, females a lot more chestnut-bodied than I remember... wonderful. If only there hadn't been a strong smell of dogpoo, it was pretty much perfect viewing! Our next bird was not so easy to identify, fork winged, pale, with an unfamiliar song...we decided on 'linnet', field guide in hand.... On then, to views of the skylark mid-pelt, under a moon so pale you could only see it with binoculars. Lovely. The railway bridge reached, we mustered a cock pheasant, views of distant rookery, a brimstone butterfly and a jay, and then spied our guest 'mystery game-bird' for the day!! After a LOT of peering between tyre tracks, we think it was a grey partridge, but it seemed to shape and colour shift, so I think all we can conclude with absolute certainty, is that it wasn't a twig.... it did move eventually! Unless it was the breeze.... A tortoiseshell butterfly as we turned for home made us all thankful that spring was really here, but the best for me was yet to come....because SEEING yellowhammer is fantastic, but HEARING them is why I came.... 
+
+Mere Sands Wood next Fri, bring your butties! X"</i></p>
+</div>
+
+
+
+<div align="center">
+
+    <div id="form">
+        <form name="registrationForm" ng-submit="submitForm()" novalidate>
+            <fieldset>
+                <label>Email Address:</label>
+                <input type="email" name="email" class="form-control" ng-model="user.username" required="" placeholder="please enter your email address">
+                <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
+                <br />
+                <br />
+
+                <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+   
+

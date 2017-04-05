@@ -1,0 +1,94 @@
+body {
+    background-color: #339933;
+    font-family: roboto;
+    color: white;
+    text-align: center;
+}
+
+.navbar-custom{
+    background-color: #339933;
+    border: 2px white solid;
+}
+
+.navbar-custom{
+    color: white;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: roboto;
+    color: white;
+}
+
+nav ul li {
+    font-size: 30px;
+    padding: 10px 5px;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: grey;
+    transition: all 2s ease;
+}
+
+.jumbotron {
+    text-align: center;
+    font-family: roboto;
+    background-color: #339933;
+    margin-top: 30px;
+}
+
+.container {
+    background-color: #339933;
+}
+
+footer {
+    padding-top: 5px;
+    text-align: center;
+    height: 100px;
+    background-color: #339933;
+}
+
+label {
+font-family: Roboto;
+font-size: 18px;
+color: white;
+height: 20px;
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+text-align: left;
+clear: both;
+}
+
+
+     @media (max-width: 992px) {
+        .navbar-header {
+            float: none;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .collapse.in{
+            display:block !important;
+        }
+}
