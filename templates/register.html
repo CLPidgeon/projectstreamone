@@ -1,6 +1,6 @@
 <style type="text/css">
 body {
-    background-color: #222222;
+     background-color: #339933;
     text-align: center;
     font-family: roboto;
     color: white;
@@ -34,8 +34,6 @@ clear: both;
 
 
 
-
-
 </style>
 
 
@@ -47,24 +45,24 @@ clear: both;
 
 </div>
 
-
-
 <div class="container" align="center">
 
     <div id="form">
-        <form name="registrationForm" ng-submit="submitForm()" novalidate>
-            <fieldset>
-                <label>Email Address:</label>
-                <input type="email" name="email" class="form-control" ng-model="user.username" required="" placeholder="please enter your email address">
-                <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
-                
-                <br />
+    <form name="RegistrationForm" ng-submit="submitForm()" novalidate>
+        <fieldset>
+            <label>Email Address:</label>
+            <input type="email" name="name" class="form-control" ng-model="name.RegistrationForm" required="" placeholder="please enter your email address">
+            <p ng-show="RegistrationForm.name.$pristine" class="help-block">Your email address is required</p>
+            <br />
+            <br />
 
-                <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
-            </fieldset>
-        </form>
-    </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Register</button>
+        </fieldset>
+    </form>
 </div>
+</div>
+
+
 
    
 

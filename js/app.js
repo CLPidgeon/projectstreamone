@@ -1,41 +1,37 @@
-var BandApp = angular.module('BandApp', ['RouteControllers']);
+angular.module('BirdApp', ['ngRoute','RouteControllers']);
 
 
+angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
+	$locationProvider.html5Mode(true);
+	$routeProvider
 
-BandApp.config(['$routeProvider',
-
-  function($routeProvider) {
-
-    $routeProvider.
-
-
-    when('/', {
+    .when("/", {
 		templateUrl: 'templates/home.html',
 		controller: 'HomeController'
 	}).
-      when('/biography', {
+      when("/about", {
 		templateUrl: 'templates/biography.html',
 		controller: 'BiographyController'
 	}).
-      when('/music', {
+      when("/song", {
 		templateUrl: 'templates/music.html',
 		controller: 'MusicController'
 	}).
-      when('/videos', {
+      when("/videos", {
 		templateUrl: 'templates/videos.html',
 		controller: 'VideoController'
 	}).
-      when('/events', {
+      when("/events", {
 		templateUrl: 'templates/events.html',
 		controller: 'EventsController'
 	}).
-      when('/contact', {
+      when("/contact", {
 		templateUrl: 'templates/contact.html',
 		controller: 'ContactController'
 	}).
-      when('/accounts/register', {
+      when("/accounts/register", {
 		templateUrl: 'templates/register.html',
 		controller: 'RegisterController'
 	});
 
-}]);
+});

@@ -1,179 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="BirdApp">
 <head>
-    <title>Swing/Jive Band</title>
+    <title>Bird Group</title>
     <base href="/">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <script src ="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
-    <style type="text/css">
-
-        body {
-            padding-top: -50px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            font-family: roboto;
-            color: white;
-        }
-
-        nav ul li {
-            font-size: 20px;
-            padding: 10px 5px;
-        }
-
-        nav ul li:hover {
-            background-color: grey;
-            transition: all 2s ease;
-        }
-
-        .jumbotron {
-            text-align: center;
-            font-family: roboto;
-            background-color: #222222;
-            color: white;
-            padding-top: 50px;
-        }
-
-        .container {
-            background-color: #222222;
-            color: white;
-        }
-
-        footer {
-            padding-top: 50px;
-            text-align: center;
-            height: 100px;
-            background-color: #222222;
-            color: white;
-            font-family: roboto;
-        }
-
-        @media (max-width: 992px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-}
-      
-
-
-
-    </style>
-       
-
-
 </head>
 
-  <body ng-app="BandApp">
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<body>
+         <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
             <div class="container">
                 <div class="navbar-header">
-                    
-
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-
-
-                <ul id="myCollapsingList" class="nav nav-justified collapse navbar-collapse" >
-                
-                    <li><a href="#/">Swing/Jive Band </a></li>
-                    <li><a href="#/biography"> About </a></li>
-                    <li><a href="#/music"> Listen </a></li>
-                    <li><a href="#/videos"> Watch </a></li>
-                    <li><a href="#/events"> Events </a></li>
-                    <li><a href="#/contact"> Contact </a></li>
-
-                </ul>
-            </div>
-
-            
-
-        </nav>
-
+        <ul id="myCollapsingList" class="nav navbar-nav collapse navbar-collapse" >
+            <li><a href="/">Bird Group </a></li>
+            <li><a href="/about"> About </a></li>
+            <li><a href="/song"> Bird Song </a></li>
+            <li><a href="/videos"> Videos </a></li>
+            <li><a href="/events"> Events </a></li>
+            <li><a href="/contact"> Contact Us </a></li>
+        </ul>
+    </div>
+</nav>
     <div class="jumbotron">
         <div class="container">
-            
-            <h1>Swing/Jive Band</h1>
-            <p>The wedding and event specialists</p>
+            <h1>Bird Group</h1>
+            <p>Sale's Friday Birding Group</p>
             <hr/>
         </div>
     </div>
 
-    
-            <div ng-view>
-                
-            </div>
+    <div ng-view>
+    </div>
 
-        <footer class="col-12">
+ <footer class="col-12">
             <hr />
             <h3>Social Media Pages</h3>
             <p>
-                <a href="https://www.facebook.com"> <img src="images/facebook.jpeg" alt="facebook page" height="50px" width="50px" /> </a>
-                <a href="https://www.twitter.com"> <img src="images/twitter.jpeg" alt="twitter feed" height="50px" width="50px" /> </a>
-                <a href="https://www.youtube.com"> <img src="images/youtube.jpeg" alt="youtube channel" height="50px" width="50px" /> </a>
+                <a href="http://www.facebook.com"> <img src="images/facebook.jpeg" alt="facebook page" height="50px" width="50px" /> </a>
+                <a href="http://www.twitter.com"> <img src="images/twitter.jpeg" alt="twitter feed" height="50px" width="50px" /> </a>
 
             </p>
 
-            <p>Copyright 2017 etc </p>
+            <p>Copyright 2016 etc </p>
         </footer>
  
   </body>
-
-<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAI7PS5TOgb4OhT-H4rSg77rECv8VbXZUk",
-    authDomain: "project-stream-one.firebaseapp.com",
-    databaseURL: "https://project-stream-one.firebaseio.com",
-    storageBucket: "project-stream-one.appspot.com",
-    messagingSenderId: "834695164950"
-  };
-  firebase.initializeApp(config);
-</script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/service.js"></script>
