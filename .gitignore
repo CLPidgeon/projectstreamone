@@ -1,0 +1,5 @@
+firebase.json
+firebase-debug.log
+.firebaserc.firebaserc
+project/functions
+project/bootstrap
