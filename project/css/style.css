@@ -5,9 +5,19 @@ body {
     text-align: center;
 }
 
+a {
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
 .navbar-custom{
     background-color: #339933;
     border: 2px white solid;
+    color: white;
+    align-content: center;
 }
 
 .navbar-custom{

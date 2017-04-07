@@ -11,7 +11,7 @@ angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
 	}).
       when("/about", {
 		templateUrl: 'templates/about.html',
-		controller: 'BiographyController'
+		controller: 'AboutController'
 	}).
       when("/media", {
 		templateUrl: 'templates/media.html',
@@ -28,6 +28,6 @@ angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
       when("/newsletter/register", {
 		templateUrl: 'templates/register.html',
 		controller: 'RegisterController'
-	});
+	})
 
 });

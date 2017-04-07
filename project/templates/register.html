@@ -18,7 +18,8 @@
 
 
 <div class="container">
-  <h1>Register for our weekly round up newsletter!</h1>
+  <h1>{{title}}</h1>
+
     
     <hr />
     <p>Here's an example of our weekly roundup newsletter from our recent trip to Carrington:<p>
@@ -32,15 +33,15 @@ Mere Sands Wood next Fri, bring your butties! X"</i></p>
 <div align="center">
 
     <div id="form">
-        <form name="registrationForm" ng-submit="submitForm()" novalidate>
+        <form name="registrationForm" data-ng-submit="submitForm()" novalidate>
             <fieldset>
                 <label>Email Address:</label>
-                <input type="email" name="email" class="form-control" ng-model="user.username" required="" placeholder="please enter your email address">
+                <input type="email" name="email" class="form-control" data-ng-model="user.username" required="" placeholder="please enter your email address">
                 <p ng-show="registrationForm.name.$pristine" class="help-block">Your email address is required</p>
                 <br />
                 <br />
 
-                <button type="submit" class="btn btn-primary" ng-disabled="registrationForm.$invalid">Submit</button>
+                <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid">Sign up!</button>
             </fieldset>
         </form>
     </div>

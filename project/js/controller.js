@@ -6,7 +6,7 @@ angular.module('RouteControllers', [])
 
     })
 
-    .controller('BiographyController', function($scope) {
+    .controller('AboutController', function($scope) {
 
         $scope.title = "About Sale's Bird Group"
 
@@ -19,17 +19,40 @@ angular.module('RouteControllers', [])
 
     })
 
+    .controller('RegisterController', function($scope) {
+        
+       $scope.title = "Register for our weekly round up newsletter!"
+
+        $scope.registrationUser = {}
+
+        $scope.submitForm = function(){
+            if ($scope.registrationForm.$valid) {
+                $scope.registrationUser.username = $scope.user.username;
+           } 
+            console.log($scope.registrationUser.username);
+        }
+
+    })
+
     .controller('EventsController', function($scope) {
 
         $scope.title ="Some events Sale Bird Group have taken part in"
-
-    .controller('ContactController', function($scope){
-       $scope.title = "Contact Us!"
-        $scope.info = "For more information, fill out the form and we will be in touch!"
     })
 
-    .controller('RegisterController', function($scope){
-        $scope.title = "Register for our weekly round up newsletter"
-    })
+    .controller('ContactController', function($scope) {
 
+        $scope.title = "Contact Us!"
+        $scope.info = "For more information, fill out the form and we will get in touch!"
+
+        $scope.contactUser = {}
+
+        $scope.submitForm = function(){
+            if ($scope.contactForm.$valid) {
+                $scope.contactUser.name = $scope.contact.name;
+                $scope.contactUser.email = $scope.contact.email;
+                $scope.contactUser.number = $scope.contact.number;
+                $scope.contactUser.day = $scope.contact.day;
+            }
+            console.log($scope.contactUser.name + " " + $scope.contactUser.email + " " + $scope.contactUser.number + " " + $scope.contactUser.day);
+        }
     });
