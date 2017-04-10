@@ -1,3 +1,5 @@
+Last updated 10/04/2017
+
 # Bird Group
 
 ## Overview
@@ -25,7 +27,7 @@ The site is styled with Bootstrap with routing done using AngularJS.
 ### Tech Used
 
 - **AngularJS** - this handles the page routing. 
-- **Bootstrap** - to give the site a responsive layout
+- **Bootstrap** - to give the site a responsive layout.
 
 ### Testing
 
