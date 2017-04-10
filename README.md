@@ -12,7 +12,7 @@ The site allows people outside of the group to get in contact if they are intere
 
 ### How does it work?
 
-THe site is styled with Bootstrap with routing done using AngularJS. 
+The site is styled with Bootstrap with routing done using AngularJS. 
 
 ### Features
 
