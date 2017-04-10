@@ -1,4 +1,4 @@
-angular.module('BirdApp', ['ngRoute','RouteControllers']);
+angular.module('BirdApp', ['ngRoute','RouteControllers', 'UserService']);
 
 
 angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
