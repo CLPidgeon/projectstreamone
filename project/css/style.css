@@ -14,27 +14,20 @@ a:hover{
 }
 
 .navbar-custom{
+    display: flex;
     background-color: #339933;
     border: 2px white solid;
     color: white;
-    align-content: center;
-}
-
-.navbar-custom{
-    color: white;
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul li a {
     text-decoration: none;
     font-family: roboto;
     color: white;
-}
-
-nav ul li {
     font-size: 30px;
     padding: 10px 5px;
-    color: white;
 }
 
 nav ul li:hover {
@@ -58,6 +51,11 @@ footer {
     text-align: center;
     height: 100px;
     background-color: #339933;
+}
+
+.socialmedia {
+    display:inline-block;
+    padding:5px;
 }
 
 label {
