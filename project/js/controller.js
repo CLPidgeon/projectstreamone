@@ -24,14 +24,13 @@ angular.module('RouteControllers', [])
        $scope.title = "Register for our weekly round up newsletter!"
 
         $scope.registrationUser = {};
-        var URL = "https://morning-castle-91468.herokuapp.com/";
-
+       
         $scope.submitForm = function(){
             if ($scope.registrationForm.$valid) {
                 $scope.registrationUser.username = $scope.user.username;
 
-                UserAPIService.registerUser(URL + "newsletter/register/", $scope.registrationUser).then(function(results){
-                    $scope.data = results.datal
+                UserAPIService.registerUser("newsletter/register/", $scope.registrationUser).then(function(results){
+                    $scope.data = results.data;
                     alert("You have successfully signed up for our newsletter!");
                 }).catch(function(err){
                     alert("Ooops! Something went wrong, try again!");
@@ -54,7 +53,6 @@ angular.module('RouteControllers', [])
         $scope.info = "For more information, fill out the form and we will get in touch!"
 
         $scope.contactUser = {};
-        var URL = "https://morning-castle-91468.herokuapp.com/";
 
         $scope.submitForm = function(){
             if ($scope.contactForm.$valid) {
@@ -63,8 +61,8 @@ angular.module('RouteControllers', [])
                 $scope.contactUser.number = $scope.contact.number;
                 $scope.contactUser.day = $scope.contact.day;
 
-                UserAPIService.registerUser(URL + "newsletter/register/", $scope.registrationUser).then(function(results){
-                    $scope.data = results.datal
+                UserAPIService.registerUser("/contact", $scope.registrationUser).then(function(results){
+                    $scope.data = results.data;
                     alert("You have successfully signed up for our newsletter!");
                 }).catch(function(err){
                     alert("Ooops! Something went wrong, try again!");
