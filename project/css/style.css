@@ -1,102 +1,70 @@
+html {
+    background: url(../images/birdpics/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-    background-color: #339933;
     font-family: roboto;
-    color: white;
-    text-align: center;
-}
-
-a {
     color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.6;
 }
 
-a:hover{
-    color: red;
+.icon-bar {
+    background-color: white;
 }
 
-.navbar-custom{
-    display: flex;
-    background-color: #339933;
-    border: 2px white solid;
+.navbar-custom {
+    background-color: black;
     color: white;
-    align-items: center;
-    justify-content: space-between;
+    font-size: 20px;
+    opacity: 1;
+    border-radius: 20px;
+    border: 10px black solid;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-family: roboto;
+ul li {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+ul li:hover {
     color: white;
-    font-size: 30px;
-    padding: 10px 5px;
-}
-
-nav ul li:hover {
-    background-color: grey;
-    transition: all 2s ease;
 }
 
 .jumbotron {
-    text-align: center;
-    font-family: roboto;
-    background-color: #339933;
-    margin-top: 30px;
+    padding-top: 100px;
 }
 
-.container {
-    background-color: #339933;
+#accordion {
+    background-color: white;
+    color: black;
+    opacity: 1;
 }
 
-footer {
-    padding-top: 5px;
-    text-align: center;
-    height: 100px;
-    background-color: #339933;
+p a {
+    color: orange;
+    font-weight: bold;
+}
+
+#form {
+    width: 300px;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:left;
 }
 
 .socialmedia {
     display:inline-block;
     padding:5px;
-}
-
-label {
-font-family: Roboto;
-font-size: 18px;
-color: white;
-height: 20px;
-width: 200px;
-margin-top: 10px;
-margin-left: 10px;
-text-align: left;
-clear: both;
-}
-
-
-     @media (max-width: 992px) {
-        .navbar-header {
-            float: none;
-        }
-        .navbar-toggle {
-            display: block;
-        }
-        .navbar-collapse {
-            border-top: 1px solid transparent;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-        }
-        .navbar-fixed-top {
-            top: 0;
-            border-width: 0 0 1px;
-        }
-        .navbar-collapse.collapse {
-            display: none!important;
-        }
-        .navbar-nav>li {
-            float: none;
-        }
-        .navbar-nav>li>a {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        .collapse.in{
-            display:block !important;
-        }
 }
