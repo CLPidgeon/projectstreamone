@@ -21,6 +21,10 @@ angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
 		templateUrl: 'templates/events.html',
 		controller: 'EventsController'
 	}).
+      when("/game", {
+      	templateUrl: 'templates/identify.html',
+      	controller: 'MatchController'
+    }).
       when("/contact", {
 		templateUrl: 'templates/contact.html',
 		controller: 'ContactController'
