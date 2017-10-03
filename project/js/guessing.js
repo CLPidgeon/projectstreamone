@@ -1,11 +1,9 @@
 function guessBird(){
 
-	var guessOne = document.getElementById("userGuess");
-	
-	guess = guessOne.value;
+	var guess = document.getElementById("userGuess").value;	
 
 	if(guess.toUpperCase() === "PUFFIN") {
-		alert("CORRECT! This is a PUFFIN");
+		alert("CORRECT! This is a Puffin");
 		document.getElementById("userGuess").value=" ";
 	} else {
 		alert("INCORRECT! Try again.");
@@ -18,4 +16,3 @@ function guessBird(){
 function clearBox() {
  	document.getElementById("userGuess").value = " ";
 };
-
