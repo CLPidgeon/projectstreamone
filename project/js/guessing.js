@@ -1,18 +1,23 @@
+function checkBird(guess) {
+
+	return guess.toUpperCase() === "PUFFIN";
+}
+
 function guessBird(){
 
 	var guess = document.getElementById("userGuess").value;	
 
-	if(guess.toUpperCase() === "PUFFIN") {
+	if (checkBird(guess)) {
 		alert("CORRECT! This is a Puffin");
-		document.getElementById("userGuess").value=" ";
+		
 	} else {
 		alert("INCORRECT! Try again.");
-		document.getElementById("userGuess").value = " ";
-		window.location.reload();
 	};
+
+	document.getElementById("userGuess").value ="";
 
 };
 
 function clearBox() {
- 	document.getElementById("userGuess").value = " ";
+ 	document.getElementById("userGuess").value ="";
 };
