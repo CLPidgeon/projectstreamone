@@ -1,6 +1,5 @@
 angular.module('BirdApp', ['ngRoute','RouteControllers', 'UserService']);
 
-
 angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true);
 	$routeProvider
