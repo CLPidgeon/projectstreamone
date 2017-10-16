@@ -33,6 +33,7 @@ The site makes used of Bootstrap for responsive design and is styled with CSS. T
 - **Bootstrap** - to give the site a responsive layout.
 - **HTML** - used for the page content.
 - **CSS** - used to style the pages.
+- **Balsamiq Mockups** - used to create the wireframes.
 
 ### Testing
 
