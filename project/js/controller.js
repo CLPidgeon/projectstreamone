@@ -1,5 +1,6 @@
 angular.module('RouteControllers', [])
-
+        
+    // Injecting information into the pages
     .controller('HomeController', function($scope) {
         $scope.title = "Welcome to Sale's Friday Bird Group Website!"
     })
@@ -26,7 +27,6 @@ angular.module('RouteControllers', [])
                 });
            } 
         };
-
     })
     .controller('MatchController', function($scope) {
         $scope.title ="Have a go at identifying the bird"

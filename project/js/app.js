@@ -3,7 +3,8 @@ angular.module('BirdApp', ['ngRoute','RouteControllers', 'UserService']);
 angular.module('BirdApp').config(function($locationProvider, $routeProvider) {
 	$locationProvider.html5Mode(true);
 	$routeProvider
-
+	
+	//Setting up the project routing
     .when("/", {
 		templateUrl: 'templates/home.html',
 		controller: 'HomeController'
