@@ -1,5 +1,6 @@
 describe("birdGame", function() {
 
+	//Checks various ways of typing Puffin are returned as correct
 	describe("If answer is correct in lowercase", function() {
 		it("should have called the alert function saying 'correct' ", function() {
 			expect(checkBird("puffin")).toBe(true);
@@ -18,6 +19,7 @@ describe("birdGame", function() {
 		});
 	});
 
+	//Checks returns incorrect if not spelt correctly
 	describe("If answer is incorrect", function() {
 		it("should have called the alert function saying 'incorrect' ", function() {
 			expect(checkBird("puffing")).toBe(false);
